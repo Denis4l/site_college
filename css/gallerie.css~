@@ -1,0 +1,78 @@
+.node-gallery {
+  float: left;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  margin: 0 60px 50px 0;
+}
+
+.node-gallery img {
+  position: absolute;
+  bottom:0px;
+}
+
+.node-gallery .image1 {left: 0px;
+  z-index: 3;
+  -webkit-transition:all 0.2s ease;
+  -moz-transition:all 0.2s ease;
+  -o-transition:all 0.2s ease
+}
+
+.node-gallery .image2 {left: 7px;
+  height: 148px;
+  z-index: 2;
+  -webkit-transition:all 0.2s ease;
+  -moz-transition:all 0.2s ease;
+  -o-transition:all 0.2s ease
+}
+
+.node-gallery .image3 {left: 14px;
+  height: 145px;
+  z-index: 1;
+  -webkit-transition:all 0.2s ease;
+  -moz-transition:all 0.2s ease;
+  -o-transition:all 0.2s ease
+}
+
+.image1, .image2, .image3{
+  border: 5px solid #F3F3F3;
+  box-shadow: 1px 1px 2px #666;
+  -webkit-shadow:1px 1px 2px #666;
+  -webkit-transform:rotate(0deg) translate(0px);
+}
+
+.node-gallery:hover .image1{
+   z-index: 6;
+  -ms-transform: rotate(-5deg) translate(-40px, -2px);
+  -ms-transform-origin:center bottom;
+  -webkit-transform: rotate(-5deg) translate(-40px, 2px);
+  -webkit-transform-origin:center bottom;
+  -moz-transform: rotate(-5deg) translate(-40px, -2px);
+  -moz-transform-origin:center bottom;
+  -o-transform: rotate(-5deg) translate(-40px, -2px);
+  -o-transform-origin:center bottom;
+}
+
+.node-gallery:hover .image2{
+   z-index: 5;
+  -ms-transform: rotate(-2deg) translate(0px, 2px);
+  -ms-transform-origin:center bottom;
+  -webkit-transform: rotate(-2deg) translate(0px, -2px);
+  -webkit-transform-origin:center bottom;
+  -moz-transform: rotate(-2deg) translate(0px, 2px);
+  -moz-transform-origin:center bottom;
+  -o-transform: rotate(-2deg) translate(0px, 2px);
+  -o-transform-origin:center bottom;
+}
+
+.node-gallery:hover .image3{
+   z-index: 4;
+  -ms-transform: rotate(5deg) translate(40px,-2px);
+  -ms-transform-origin:center bottom;
+  -webkit-transform: rotate(5deg) translate(40px,2px);
+  -webkit-transform-origin:center bottom;
+  -moz-transform: rotate(5deg) translate(40px,-2px);
+  -moz-transform-origin:center bottom;
+  -o-transform: rotate(5deg) translate(40px,-2px);
+  -o-transform-origin:center bottom;
+}
